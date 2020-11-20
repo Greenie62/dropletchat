@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/socket.io/socket.io.js"></script>    
+    <title>Socket Chat</title>
+</head>
+<body>
+    <div class="socketChatHeader">
+        <h1 class='socketh1'>Socket</h1>
+        <a class='logout-link' href="/">Logout</a>
+    </div>
+
+    <div class="socketContainer">
+    
+    
+    <div class="addMessageRow">
+        <div class="messageFormDiv">
+            <label for="message">MESSAGE:</label>
+            <input type="text" name="message" id="message" placeholder="message..." autocomplete="off">
+            <button class="messageBtn">Send</button>
+        </div>
+        <div class="infoDiv">
+        <h3>Room:<span class='room'></span><h3>Users:<span class='users'></span></h3>
+        </div>
+    </div>
+
+        <div class="messageContainer"></div>
+    
+
+    </div>
+
+
+    <div class="socketChatFooter">
+        <p>Footer&copy;</p>
+    </div>
+
+
+    <script src="js/chat.js"></script>
+</body>
+</html>

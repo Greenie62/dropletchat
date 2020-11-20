@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Join Chat</title>
+</head>
+<body>
+    <header>
+    <h1>Socket Join Chat</h1>
+    </header>
+
+    <div class="joinContainer">
+        <div class="joinCard">
+            <form action="/join" method="POST">
+                <div class="formDiv">
+                    <label for="username">Username:</label>
+                    <input class='joinInput' type="text" name="username" id="username" placeholder="username..." autoComplete="off">
+                </div>
+                <div class="formDiv">
+                    <label for="room">Room:</label>
+                    <input class='joinInput roominput' type="text" name="room" id="room" placeholder="room..." autoComplete="off">
+                </div>
+                <button class="joinBtn">Join</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Footer&copy;</p>
+    </footer>
+
+
+    <script src="js/join.js"></script>
+</body>
+</html>
